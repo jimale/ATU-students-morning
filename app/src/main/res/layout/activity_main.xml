@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/student_pic"
+        android:src="@drawable/student_icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
 
     <EditText
         android:hint="Enter your name"
