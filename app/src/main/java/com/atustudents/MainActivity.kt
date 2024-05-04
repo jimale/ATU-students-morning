@@ -19,7 +19,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        displayStudentName()
         imageViewSample()
+        openWebViewActivity()
+    }
+
+    private fun openWebViewActivity(){
+        val button : Button = findViewById(R.id.open_web_btn)
+        button.setOnClickListener {
+            val intent = Intent(this,WebViewActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun imageViewSample() {
