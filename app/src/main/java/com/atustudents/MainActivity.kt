@@ -22,12 +22,21 @@ class MainActivity : AppCompatActivity() {
         displayStudentName()
         imageViewSample()
         openWebViewActivity()
+        openSharedPreferencesActivity()
     }
 
     private fun openWebViewActivity(){
         val button : Button = findViewById(R.id.open_web_btn)
         button.setOnClickListener {
             val intent = Intent(this,WebViewActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun openSharedPreferencesActivity(){
+        val button : Button = findViewById(R.id.open_sharedPref_btn)
+        button.setOnClickListener {
+            val intent = Intent(this,SharedPreferencesActivity::class.java)
             startActivity(intent)
         }
     }
